@@ -1,5 +1,5 @@
 
-
+/*
 var gulp = require('gulp');
 
 // gulp plugins and utils
@@ -31,7 +31,7 @@ var nodemonServerInit = function () {
     livereload.listen(1234);
 };
 
-gulp.task('build', ['css'], function (/* cb */) {
+gulp.task('build', ['css'], function (/* cb *) { // dont forget to add /
     return nodemonServerInit();
 });
 
@@ -80,7 +80,7 @@ gulp.task('serve', function () {
         proxy: "http://localhost:2368"
     });
 
-    gulp.watch("./**/*.hbs").on('change', browserSync.reload);
+    gulp.watch("./**//*.hbs").on('change', browserSync.reload);
     gulp.watch("./assets/css/*.css").on('change', browserSync.reload);
 });
 
@@ -92,3 +92,27 @@ gulp.task('default', ['build','serve'], function () {
     gulp.start('watch');
 });
 
+
+*/
+
+var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
+
+// Static Server + watching css/html files
+gulp.task('serve', ['css'], function () {
+
+    browserSync.init({
+        proxy: "http://localhost:2368"
+    });
+
+    gulp.watch("./assets/css/*.css", ['css']);
+    gulp.watch("./**/*.hbs").on('change', browserSync.reload);
+});
+
+// auto-inject CSS into browsers
+gulp.task('css', function () {
+    return gulp.src("./assets/css/*.css")
+        .pipe(browserSync.stream());
+});
+
+gulp.task('default', ['serve']);

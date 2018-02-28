@@ -1,26 +1,30 @@
-<article class="post-card {{post_class}}{{#unless feature_image}} no-image{{/unless}}">
-    {{#if feature_image}}
-        <a class="post-card-image-link" href="{{url}}">
-            <div class="post-card-image" style="background-image: url({{feature_image}})"></div>
-        </a>
-    {{/if}}
-    <div class="post-card-content">
-        <a class="post-card-content-link" href="{{url}}">
-            <header class="post-card-header">
-                {{#if primary_tag}}
-                    <span class="post-card-tags">{{primary_tag.name}}</span>
+<div class="post-card">
+    <div class="container-fluid">
+        <div class="row">
+            <article class="{{post_class}}{{#unless feature_image}} no-image{{/unless}}">
+               {{#if feature_image}}
+                    <a href="{{url}}">
+                    <div  style="background-image: url({{feature_image}})"></div>
+                </a>
                 {{/if}}
-                <h2 class="post-card-title">{{title}}</h2>
-            </header>
-            <section class="post-card-excerpt">
-                <p>{{excerpt words="33"}}</p>
-            </section>
-        </a>
-        <footer class="post-card-meta">
-            {{#if author.profile_image}}
-                <img class="author-profile-image" src="{{author.profile_image}}" alt="{{author.name}}" />
-            {{/if}}
-            <span class="post-card-author">{{author}}</span>
-        </footer>
+                <div>
+                <a href="{{url}}">
+                    <header>
+                        <h2 class="post-card-title" >{{title}}</h2>
+                        {{#if primary_tag}}
+                            <p class="post-card-tag">{{primary_tag.name}}</p>
+                        {{/if}}
+                    </header>
+                    <section >
+                        <p class="post-card-excerpt">{{excerpt words="100"}}</p>
+                    </section>
+                </a>
+                <footer>
+                    <span class="post-card-date">{{date published_at format="MMMM DD, YYYY"}}</span>
+                </footer>
+                </div>
+            </article>
+        </div>
     </div>
-</article>
+</div>
+

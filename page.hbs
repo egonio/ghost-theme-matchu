@@ -10,11 +10,15 @@ into the {body} of the default.hbs template --}}
 </header>
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
-{{#post}}
 
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
 
+<div class="page">
+    {{#post}}
+<main>
+   
+  
+ <div class="page-content">
+       <div class="container">
         <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
 
             <header class="post-full-header">
@@ -33,16 +37,10 @@ into the {body} of the default.hbs template --}}
         </article>
 
     </div>
+    </div>
 </main>
-
 {{/post}}
+</div>
 
-{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
-{{#contentFor "scripts"}}
-<script>
-$(function() {
-    var $postContent = $(".post-full-content");
-    $postContent.fitVids();
-});
-</script>
-{{/contentFor}}
+
+

@@ -3,27 +3,51 @@
 into the {body} of the default.hbs template --}}
 
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
-<header class="site-header outer {{#if @blog.cover_image}}" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
-    <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
+<div class="d-block d-md-none">
+    {{> "site-nav"}}
+</div>
+
+
+<div class="index-main"> 
+
+
+    
+<div class="jumbotron-fluid">
+    <div class="container index-header">
+        <div class="row">
+            <div class="col-xs-12" style="width: 100%">
+                <h1 class="display-4"></h1>
                 {{#if @blog.logo}}
-                    <img class="site-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
-                {{else}}
-                    {{@blog.title}} <p> HELLO!</p>
+                    <img class="index-logo" src="{{@blog.logo}}" />
                 {{/if}}
-            </h1>
-            <h2 class="site-description">{{@blog.description}}</h2>
+                <p class="lead index-title"> {{@blog.title}}</p>
+                <p class="index-description">{{@blog.description}}</p>
+            </div>
         </div>
-        {{> "site-nav"}}
     </div>
-</header>
+</div>
+
+<div class="index-navigation-bar d-none d-md-block">
+        <div class="row">
+            <div class="col-xs-12" style="width:100%">
+                <nav class="navbar navbar-dark navbar-expand-md bg-faded justify-content-center index-navbar">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                    <ul class="navbar-nav mx-auto w-100 justify-content-center">
+                        {{navigation}}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
 
 {{!-- The main content area --}}
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
-
-        <div class="post-feed">
+<main class="index-post-cards">
+    <div class="index-card">
+        <div>
             {{#foreach posts}}
 
                 {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
@@ -34,3 +58,6 @@ into the {body} of the default.hbs template --}}
 
     </div>
 </main>
+
+
+</div>

@@ -1,0 +1,105 @@
+/*************** INDEX ***************/
+.index-main{
+    background-color: rgb(43, 42, 42);
+}
+
+.index-logo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.index-header{
+    text-align: center;
+    color: white;
+}
+
+.index-navigation ul{
+    display:inline-table; 
+}
+
+.index-navigation li{
+    display:inline;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+
+.index-main .navbar-dark .navbar-nav .nav-link {
+   
+    color: cadetblue; 
+}
+
+.index-post-cards{
+    padding-top: 25px;
+  
+}
+
+.index-card{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@media (max-width: 768px) {
+    .index-card{
+        padding: 0px;
+    }
+}
+
+
+/*************** POST CARDS ****************/
+
+.post-card{
+    background-color: rgb(219, 219, 219);
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+.post-card a {
+    color: rgb(88, 88, 88);
+}
+
+.post-card a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+/*********** POST **********************/
+
+.post-body{
+    background-color:  rgb(43, 42, 42);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.post-body main{
+    background-color: rgb(219, 219, 219);
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;  
+
+}
+
+/************** PAGE ****************/
+
+.page-content{
+   
+    background-color: rgb(219, 219, 219);
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.page main {
+    background-color: rgb(43, 42, 42);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+
+

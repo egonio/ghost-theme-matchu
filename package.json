@@ -37,18 +37,11 @@
     "autoprefixer": "6.3.6",
     "browser-sync": "^2.23.6",
     "cssnano": "3.7.1",
-<<<<<<< HEAD
     "gulp": "^3.9.1",
     "gulp-livereload": "3.8.1",
     "gulp-nodemon": "2.1.0",
     "gulp-postcss": "6.1.1",
     "gulp-sass": "^3.1.0",
-=======
-    "gulp": "3.9.1",
-    "gulp-livereload": "3.8.1",
-    "gulp-nodemon": "2.1.0",
-    "gulp-postcss": "6.1.1",
->>>>>>> a35a11cc1e9b5a87598841397c46f3d08d46a72f
     "gulp-sourcemaps": "1.6.0",
     "gulp-util": "3.0.7",
     "gulp-watch": "4.3.8",

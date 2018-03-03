@@ -16,19 +16,18 @@ It's a good idea to keep this template as minimal as possible in terms of both f
 </head>
 <body class="error-body">
     <div class="container" >
-        <div class="row" >
-            <div class="col-sm-6 col-xs-12 error-row-left">
+        <div class="row justify-content-center align-items-center">
                 <img class="error-img img-responsive" src="{{asset "404.png"}}">
-            </div>
-            <div class="col-sm-6 col-xs-12 error-row-right">
-                <h1 class="error-code">{{code}}</h1>
-                <p class="error-description">{{message}}</p>
-            </div>
         </div>
-        <div class="row" >
-            <div class="col-xs-12" style="width:100%; text-align: center">
-                 <a class="error-link btn btn-primary" href="{{@blog.url}}">Go to the front page →</a>
-            </div>
+        <div class="row justify-content-center align-items-center">
+        <h1 class="error-code">{{code}}</h1>
+        </div>
+        <div class="row justify-content-center align-items-center">
+        <p class="error-description">{{message}}</p>
+        </div>
+      
+        <div class="row justify-content-center align-items-center" >
+                 <a class="error-link btn btn-secondary" href="{{@blog.url}}">Go to the front page →</a>
         </div>
     </div>
                     

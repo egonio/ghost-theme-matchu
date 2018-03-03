@@ -3,30 +3,40 @@
 into the {body} of the default.hbs template --}}
 
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
-<div class="d-block d-md-none">
-    {{> "site-nav"}}
-</div>
+
+{{> "site-nav"}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
 
 
-<div class="index-main"> 
-
-<div class="jumbotron-fluid">
-    <div class="container index-header">
-        <div class="row">
-            <div class="col-xs-12" style="width: 100%">
-                <h1 class="display-4"></h1>
-                {{#if @blog.logo}}
-                    <img class="index-logo" src="{{@blog.logo}}" />
-                {{/if}  }
-                <p class="lead index-title"> {{@blog.title}}</p>
-                <p class="index-description">{{@blog.description}}</p>
-            </div>
+<div class="pages">
+    <div class="row">
+        <div class="col-xs-12 col-md-9">
+            {{#post}}
+            <main>
+                <div class="pages-header">
+                     {{#if feature_image}}
+                        <figure class="post-full-image" style="background-image: url({{feature_image}})">
+                        </figure>
+                    {{/if}}
+                    <header>
+                        <h1 class="post-full-title" style="margin:0px">{{title}}</h1>
+                    </header>
+                </div>   
+                <div class="pages-content">
+                        <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+                            <section class="post-full-content">
+                                {{content}}
+                            </section>
+                        </article>
+                </div>
+            </main>
+            {{/post}}
+        </div>
+        <div class="col-xs-12 col-md-3">
+            {{>"desktop-nav"}}
         </div>
     </div>
 </div>
 
-<div class="index-navigation-bar d-none d-md-block">
-        {{> "desktop-nav"}}
-</div>
 
-</div>

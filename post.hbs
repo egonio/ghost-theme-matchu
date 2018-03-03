@@ -1,54 +1,42 @@
 {{!< default}}
-
-{{!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template --}}
-
-
-
-{{> "desktop-nav"}}
 {{> "site-nav"}}
 
 
-
-{{!-- Everything inside the #post tags pulls data from the post --}}
-{{#post}}
-<div class="post-body">
-        <div class="post-whole">
-
-
-       
-<main>
-    <div class="inner">
-        <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
-            <header>
-                <h1 class="post-full-title">{{title}}</h1>
-                <section>
-                    <time class="post-full--date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
-                    {{#primary_tag}}
-                        <span>Tags:</span> <a href="{{url}}">{{name}}</a>
-                    {{/primary_tag}}
-                </section>
-            </header>
-            {{#if feature_image}}
-            <figure class="post-full-image" style="background-image: url({{feature_image}})">
-            </figure>
-            {{/if}}
-
-            <section class="post-content img-responsive" >
-                <div class="row row-content">
-                    <div class="col-xs-12">
-                         {{content}}
-                    </div>
+<div class="posts">
+    <div class="row">
+        <div class="col-xs-12 col-md-9">
+            {{#post}}
+            <div class="post-body">
+            <article class="{{post_class}}">
+                <div class="post-header">
+                    <!--
+                    {{#if feature_image}}
+                        <figure class="posts-image" style="background-image: url({{feature_image}})">
+                        </figure>
+                    {{/if}}
+                    -->
+                    <h1 class="post-full-title">{{title}}</h1>
+                    <section>
+                       
+                        {{#if tags}}
+                         <p>Tags: 
+                            {{#foreach tags}}
+                                <a href="{{url}}" title="{{name}}">{{name}}</a>
+                            {{/foreach}}
+                        {{/if}}
+                        </p>
+                        <p> <time class="post-full--date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time></p>
+                    </section>
                 </div>
-               
-            </section>         
-        </article>
-    </div>
-</main>
- </div>
+                <div class="post-content img-responsive" >
+                            {{content}}
+                </div>         
+            </article>
+            </div>
+            {{/post}}
+        </div>
+        <div class="col-xs-12 col-md-3">
+            {{>"desktop-nav"}}
+        </div>
     </div>
 </div>
-
-
-
-{{/post}}

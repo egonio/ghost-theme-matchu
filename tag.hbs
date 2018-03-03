@@ -1,34 +1,50 @@
 {{!< default}}
-<div class="header">
+
     {{> "site-nav"}}
-    {{> "desktop-nav"}}
-</div>
- 
-<div class="tag-body">
-    <div class="tag-content">
-    <div class="container-fluid" style="width: 100%">
-        {{#tag}}
+<div class="tags">
+    <div class="tag-body">
         <div class="row">
-            <div class="col-xs-12">
-               <div class="tag-header">
-                    <h1 class="tag-title">Tag: {{name}}</h1>
-               </div>
-               <div class="tag-description">
+            <div class="col-xs-12 col-md-9">
+                {{#tag}}
+                <div class="tag-header">
+                    <h1 class="tag-title">{{name}}</h1>
+                    <div class="tag-description">
                     {{#if description}}
                         {{description}}
                     {{else}}
                         A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}
                     {{/if}}
-               </div>
+                    </div>
+                </div>
+                 {{/tag}}
+                <div class="tag-content">
+                    {{#foreach posts}}
+                        {{> "post-card"}}
+                    {{/foreach}}
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                {{> "desktop-nav"}}
             </div>
         </div>
-        {{/tag}}
+        </div>
+    
+        
+</div>
+ 
+<div class="tag-body">
+    <div class="tag-content">
+    <div class="container-fluid" style="width: 100%">
+        
+        <div class="row">
+            <div class="col-xs-12">
+               
+            </div>
+        </div>
+       
         <div class="row">
             <div class="tag-post">
-                {{#foreach posts}}
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                    {{> "post-card"}}
-                {{/foreach}}
+                
             </div>
         </div>
     </div>

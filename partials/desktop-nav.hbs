@@ -1,0 +1,32 @@
+<div class="desktop-nav">
+    <div class="jumbotron-fluid d-none d-md-block">
+        <br>
+        <div class="container index-header">
+            <div class="row  justify-content-center">
+                {{#if @blog.logo}}
+                <div class="col-xs-12">
+                    <a href="{{@blog.url}}">
+                         <img class="desktop-nav-logo img-responsive" src="{{@blog.logo}}" />
+                    </a>
+                </div>
+                <div class="col-xs-12 index-text">
+                    <p class="desktop-nav-title"> {{@blog.title}}</p>
+                    <p class="desktop-nav-description">{{@blog.description}}</p>
+                </div>
+                {{else}}
+                <div class="col-xs-12" style="width: 100%;">
+                    <p class="desktop-nav-title"> {{@blog.title}}</p>
+                    <p class="desktop-nav-description">{{@blog.description}}</p>
+                </div>
+
+                {{/if}}
+            </div>
+        </div>
+    </div>
+
+    <div class="desktop-nav-bar d-none d-md-block">
+        <ul>
+            {{navigation}}
+        </ul>
+    </div>
+</div>

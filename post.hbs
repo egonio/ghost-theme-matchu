@@ -1,0 +1,42 @@
+{{!< default}}
+{{> "site-nav"}}
+
+
+<div class="posts">
+    <div class="row">
+        <div class="col-xs-12 col-md-9">
+            {{#post}}
+            <div class="post-body">
+            <article class="{{post_class}}">
+                <div class="post-header">
+                    <!--
+                    {{#if feature_image}}
+                        <figure class="posts-image" style="background-image: url({{feature_image}})">
+                        </figure>
+                    {{/if}}
+                    -->
+                    <h1 class="post-full-title">{{title}}</h1>
+                    <section>
+                       
+                        {{#if tags}}
+                         <p>Tags: 
+                            {{#foreach tags}}
+                                <a href="{{url}}" title="{{name}}">{{name}}</a>
+                            {{/foreach}}
+                        {{/if}}
+                        </p>
+                        <p> <time class="post-full--date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time></p>
+                    </section>
+                </div>
+                <div class="post-content img-responsive" >
+                            {{content}}
+                </div>         
+            </article>
+            </div>
+            {{/post}}
+        </div>
+        <div class="col-xs-12 col-md-3">
+            {{>"desktop-nav"}}
+        </div>
+    </div>
+</div>

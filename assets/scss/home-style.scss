@@ -1,0 +1,427 @@
+$main-bg: rgb(24, 25, 29);
+$post-bg: rgb(255, 255, 255);
+$header-light-bg: white;
+$header-dark-bg: rgb(40,46,51);
+$link-color: cadetblue;
+$padding-lg: 100px;
+$padding-md: 50px;
+$padding-sm: 0px;
+$light-text: white;
+$medium-text: rgb(135, 135, 135);
+$dark-text: black;
+html,
+body {
+    background-color: $main-bg;
+}
+
+time {
+    color: $medium-text;
+}
+
+/*************** INDEX ***************/
+
+.index-main {
+    background-color: $main-bg;
+    padding: 30px;
+    padding-left: $padding-lg;
+    padding-right: $padding-lg;
+}
+
+.index-header {
+    text-align: left;
+    color: $header-light-bg;
+}
+
+.index-post-cards {
+    padding-bottom: 25px;
+}
+
+
+
+@media (max-width: 992px) {
+    .index-main {
+        background-color: $main-bg;
+        padding: 20px;
+        padding-left: $padding-md;
+        padding-right: $padding-md;
+    }    
+}
+
+@media (max-width: 768px) {
+    .index-main {
+        background-color: $main-bg;
+        padding: 0px;
+        padding-left: $padding-sm;
+        padding-right: $padding-sm;
+    }
+    .index-post-cards {
+        padding-bottom:0px;
+    }
+}
+
+
+/*************** POST CARDS ****************/
+
+.post-card {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    background-color: $post-bg;
+}
+
+.post-card-content {
+    color: $dark-text;
+    padding: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.post-card-date {
+    color: $medium-text;
+}
+
+.post-card-tags {
+    text-decoration: underline;
+    text-decoration-color: $link-color;
+}
+
+.post-card-tags:hover {
+    color: $link-color;
+}
+
+.post-card-header a {
+    color: $light-text;
+}
+
+.post-card-content a {
+    color: $dark-text;
+}
+
+.post-card a:hover {
+    color: $dark-text;
+    text-decoration: none;
+}
+
+.post-card-header a:hover {
+    color: $link-color;
+}
+
+.post-card-header {
+    background-color: $header-dark-bg;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: $header-light-bg;
+}
+
+.post-card-header p {
+    margin: 0;
+}
+
+
+
+.post-card-img{
+    height:250px;    
+    overflow:hidden;
+    img {
+        overflow:hidden;
+        width: 100%;
+    }
+}
+
+.separator hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 4px solid $link-color;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 767px) {
+    .post-card {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 576px) { 
+    .post-card-content {
+        padding: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/*********** POST **********************/
+
+.posts {
+    background-color: $main-bg;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.post-header a {
+    color: $light-text;
+    text-decoration: underline;
+    text-decoration-color: $link-color;
+    font-weight: 400;
+}
+
+.post-header a:hover {
+    color: $link-color;
+}
+
+.post-content a:hover {
+    color: $link-color;
+}
+
+.post-content a {
+    color: $dark-text;
+    text-decoration: underline;
+    text-decoration-color: $link-color;
+    font-weight: 400;
+}
+
+.post-content a:hover {
+    color: $link-color;
+}
+
+.post-body {
+    background-color: $post-bg;
+}
+
+.post-content {
+    padding: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.post-header {
+    background-color: $header-dark-bg;
+    color: $header-light-bg;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.post-body .post-content img {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .posts {
+        padding: 20px;
+        padding-left: $padding-md;
+        padding-right: $padding-md;
+    }    
+}
+
+@media (max-width: 768px) {
+    .posts {
+        padding: 0px;
+        padding-left: $padding-sm;
+        padding-right: $padding-sm;
+    }
+
+    .post-header{
+        margin: 0px;
+    }
+}
+
+@media (max-width: 576px) { 
+    .post-content {
+        background-color: $post-bg;
+        padding: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/************** PAGE ****************/
+
+.pages-content {
+    background-color: $post-bg;
+    padding: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.pages {
+    background-color: $main-bg;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.pages-header {
+    background-color: $header-dark-bg;
+    color: $header-light-bg;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.pages-header img {
+    width: 100%;
+}
+
+.pages-content img {
+    width: 100%;
+}
+
+.pages-content iframe {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .pages {
+        padding: 20px;
+        padding-left: $padding-md;
+        padding-right: $padding-md;
+    }    
+}
+
+@media (max-width: 768px) {
+    .pages {
+        padding: 0px;
+        padding-left: $padding-sm;
+        padding-right: $padding-sm;
+    }
+
+    .pages-header{
+        margin: 0px;
+    }
+}
+
+@media (max-width: 576px) { 
+    .pages-content {
+        background-color: $post-bg;
+        padding: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/*************** TAGS ******************/
+
+.tag-body {
+    background-color: $main-bg;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.tag-header {
+    color: $header-light-bg;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .tag-body {
+        padding: 20px;
+        padding-left: $padding-md;
+        padding-right: $padding-md;
+    }    
+}
+
+@media (max-width: 768px) {
+    .tag-body {
+        padding: 0px;
+        padding-left: $padding-sm;
+        padding-right: $padding-sm;
+    }
+    .tag-header {
+        margin: 0px;
+    }
+}
+
+/********* ERROR 404 *********/
+
+.error-body {
+    background-color: $main-bg;
+    color: $light-text;
+}
+
+.error-img {
+    width: 200px;
+    height: 200px;
+}
+
+.error-code {
+    font-weight: bold;
+}
+
+.post-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin-top: 30px;
+    }
+}
+
+.post-content {
+    h1+p,
+    h2+p,
+    h3+p,
+    h4+p,
+    h5+p {
+        margin-top: 30px;
+    }
+}
+
+/***** DESKTOP NAV ******/
+
+.desktop-nav-bar ul li a {
+    color: $link-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 100;
+    padding: 0px;
+    text-decoration-style: none;
+}
+
+.desktop-nav-bar ul {
+    padding: 0px;
+}
+
+.desktop-nav {
+    text-align: center;
+}
+
+.desktop-nav-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid $light-text;
+}
+
+.desktop-nav-title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.desktop-nav-description {
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+}

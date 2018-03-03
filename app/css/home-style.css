@@ -1,0 +1,243 @@
+html,
+body {
+  background-color: #2b2a2a; }
+
+time {
+  color: #878787; }
+
+/*************** INDEX ***************/
+.index-main {
+  background-color: #2b2a2a;
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px; }
+
+.index-header {
+  text-align: left;
+  color: white; }
+
+.index-post-cards {
+  padding-bottom: 25px; }
+
+@media (max-width: 768px) {
+  .index-card {
+    padding: 0px; } }
+
+/*************** POST CARDS ****************/
+.post-card {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  background-color: #dbdbdb; }
+
+.post-card-content {
+  color: black;
+  padding: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.post-card-date {
+  color: #878787; }
+
+.post-card-tags {
+  text-decoration: underline;
+  text-decoration-color: cadetblue; }
+
+.post-card-tags:hover {
+  color: cadetblue; }
+
+.post-card-header a {
+  color: white; }
+
+.post-card-content a {
+  color: black; }
+
+.post-card a:hover {
+  color: black;
+  text-decoration: none; }
+
+.post-card-header a:hover {
+  color: cadetblue; }
+
+.post-card-header {
+  background-color: #404040;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: white; }
+
+.post-card-header p {
+  margin: 0; }
+
+@media (max-width: 767px) {
+  .post-card {
+    margin-top: 0px; } }
+
+/*********** POST **********************/
+.posts {
+  background-color: #2b2a2a;
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px; }
+
+.post-header a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: cadetblue;
+  font-weight: 400; }
+
+.post-header a:hover {
+  color: cadetblue; }
+
+.post-content a:hover {
+  color: cadetblue; }
+
+.post-content a {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: cadetblue;
+  font-weight: 400; }
+
+.post-content a:hover {
+  color: cadetblue; }
+
+.post-body {
+  background-color: #dbdbdb; }
+
+.post-content {
+  padding: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.post-header {
+  background-color: #404040;
+  color: white;
+  padding: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+  margin-top: 20px; }
+
+.post-body .post-content img {
+  width: 100%; }
+
+/************** PAGE ****************/
+.pages-content {
+  background-color: #dbdbdb;
+  padding: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.pages {
+  background-color: #2b2a2a;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 50px; }
+
+.pages-header {
+  background-color: #404040;
+  color: white;
+  padding: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+  margin-top: 20px; }
+
+.pages-header img {
+  width: 100%; }
+
+.pages-content img {
+  width: 100%; }
+
+.pages-content iframe {
+  width: 100%; }
+
+/*************** TAGS ******************/
+.tag-body {
+  background-color: #2b2a2a;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 50px; }
+
+.tag-header {
+  color: white;
+  padding: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+  text-align: center; }
+
+/********* ERROR 404 *********/
+.error-body {
+  background-color: #2b2a2a;
+  color: white; }
+
+.error-img {
+  width: 200px;
+  height: 200px; }
+
+.error-code {
+  font-weight: bold; }
+
+.post-content h1 {
+  margin-top: 30px; }
+
+.post-content h2 {
+  margin-top: 30px; }
+
+.post-content h3 {
+  margin-top: 30px; }
+
+.post-content h4 {
+  margin-top: 30px; }
+
+.post-content h5 {
+  margin-top: 30px; }
+
+.post-content h1 + p {
+  margin-top: 30px; }
+
+.post-content h2 + p {
+  margin-top: 30px; }
+
+.post-content h3 + p {
+  margin-top: 30px; }
+
+.post-content h4 + p {
+  margin-top: 30px; }
+
+.post-content h5 + p {
+  margin-top: 30px; }
+
+/***** DESKTOP NAV ******/
+.desktop-nav-bar ul li a {
+  color: cadetblue;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 100;
+  padding: 0px;
+  text-decoration-style: none; }
+
+.desktop-nav-bar ul {
+  padding: 0px; }
+
+.desktop-nav {
+  text-align: center; }
+
+.desktop-nav-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #ffffff; }
+
+.desktop-nav-title {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center; }
+
+.desktop-nav-description {
+  font-weight: lighter;
+  font-size: 15px;
+  text-align: center; }

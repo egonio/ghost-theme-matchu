@@ -96,7 +96,10 @@ gulp.task('default', ['build','serve'], function () {
 */
 
 var gulp = require('gulp');
+<<<<<<< HEAD
 var sass = require('gulp-sass'); // Requires the gulp-sass plugin
+=======
+>>>>>>> a35a11cc1e9b5a87598841397c46f3d08d46a72f
 var browserSync = require('browser-sync').create();
 
 // Static Server + watching css/html files
@@ -105,11 +108,16 @@ gulp.task('serve', ['css'], function () {
     browserSync.init({
         proxy: "http://localhost:2368"
     });
+<<<<<<< HEAD
     gulp.watch("./assets/scss/*.scss",['sass']);
+=======
+
+>>>>>>> a35a11cc1e9b5a87598841397c46f3d08d46a72f
     gulp.watch("./assets/css/*.css", ['css']);
     gulp.watch("./**/*.hbs").on('change', browserSync.reload);
 });
 
+<<<<<<< HEAD
 gulp.task('sass', function () {
     return gulp.src('./assets/scss/*.scss')
         .pipe(sass())
@@ -117,10 +125,16 @@ gulp.task('sass', function () {
         .pipe(browserSync.stream())
 });
 
+=======
+>>>>>>> a35a11cc1e9b5a87598841397c46f3d08d46a72f
 // auto-inject CSS into browsers
 gulp.task('css', function () {
     return gulp.src("./assets/css/*.css")
         .pipe(browserSync.stream());
 });
 
+<<<<<<< HEAD
 gulp.task('default', ['sass','serve']);
+=======
+gulp.task('default', ['serve']);
+>>>>>>> a35a11cc1e9b5a87598841397c46f3d08d46a72f

@@ -1,4 +1,5 @@
 <div class="post-card">
+<<<<<<< HEAD
     <!--
     {{#if feature_image}}
     <div class="post-card-img">
@@ -39,3 +40,54 @@
         </div>
     </div>
 </div>
+=======
+   
+
+<div class="post-card-header">
+        <header>
+             <a href="{{url}}">
+            <h2 class="post-card-title" >{{title}}</h2>
+            </a>
+                        {{#if tags}}
+                         <p>Tags: 
+                            {{#foreach tags}}
+                                <a class="post-card-tags"href="{{url}}" title="{{name}}">{{name}}</a>
+                            {{/foreach}}
+                        </p>
+                        {{/if}}
+                 <span class="post-card-date">{{date published_at format="MMMM DD, YYYY"}}</span>
+        </header>
+</div>
+<div class="post-card-content">
+    <div class="container-fluid">
+         <a href="{{url}}">
+        <div class="row">
+            <article class="{{post_class}}{{#unless feature_image}} no-image{{/unless}}">
+               {{#if feature_image}}
+             
+                    <div  style="background-image: url({{feature_image}})"></div>
+                
+                {{/if}}
+                <div>
+                
+                    <!--
+                    <header>
+                        <h2 class="post-card-title" >{{title}}</h2>
+                        {{#if primary_tag}}
+                            <p class="post-card-tag">{{primary_tag.name}}</p>
+                        {{/if}}
+                    </header>
+                    -->
+                    <section>
+                        <p class="post-card-excerpt">{{excerpt words="100"}}</p>
+                    </section>
+                </a>
+                   
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+</div>
+
+>>>>>>> a35a11cc1e9b5a87598841397c46f3d08d46a72f

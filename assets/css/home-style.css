@@ -97,14 +97,14 @@ time {
 
 @media (max-width: 767px) {
   .post-card {
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 0px; } }
 
 @media (max-width: 576px) {
   .post-card-content {
     padding: 30px;
-    padding-left: 50px;
-    padding-right: 50px; } }
+    padding-left: 45px;
+    padding-right: 45px; } }
 
 /*********** POST **********************/
 .posts {

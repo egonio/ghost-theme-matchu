@@ -519,3 +519,14 @@ time {
     }
 }
 
+
+@media (max-width: 767px) {
+    .row, .col-xs-12, .col-lg-12, .col-sm-12{
+        padding-right: 0px;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+

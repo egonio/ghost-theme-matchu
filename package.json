@@ -1,8 +1,8 @@
 {
-  "name": "casper",
-  "description": "The default personal blogging theme for Ghost. Beautiful, minimal and responsive.",
-  "demo": "https://demo.ghost.io",
-  "version": "2.1.9",
+  "name": "Matchu",
+  "description": "Dark Theme minimal blog theme for ghost.",
+  "demo": "",
+  "version": "1.0.0",
   "engines": {
     "ghost": ">=1.2.0"
   },
@@ -12,27 +12,27 @@
     "mobile": "assets/screenshot-mobile.jpg"
   },
   "author": {
-    "name": "Ghost Foundation",
+    "name": "Eldon Gonio",
     "email": "hello@ghost.org",
-    "url": "https://ghost.org"
+    "url": "eldongonio.com"
   },
   "gpm": {
     "type": "theme",
     "categories": [
       "Minimal",
-      "Magazine"
+      "Blog"
     ]
   },
   "keywords": [
-    "ghost",
-    "theme"
+    "Matchu",
+    "Blog"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/TryGhost/Casper.git"
+    "url": "https://github.com/egonio/ghost-theme-matchu"
   },
-  "bugs": "https://github.com/TryGhost/Casper/issues",
-  "contributors": "https://github.com/TryGhost/Casper/graphs/contributors",
+  "bugs": "https://github.com/egonio/ghost-theme-matchu/issues",
+  "contributors": "https://github.com/egonio/ghost-theme-matchu/graphs/contributors",
   "devDependencies": {
     "autoprefixer": "6.3.6",
     "browser-sync": "^2.23.6",

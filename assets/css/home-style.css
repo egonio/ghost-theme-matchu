@@ -221,6 +221,18 @@ time {
 .pages-content iframe {
   width: 100%; }
 
+.pages-header a:hover {
+  color: cadetblue; }
+
+.pages-content a:hover {
+  color: cadetblue; }
+
+.pages-content a {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: cadetblue;
+  font-weight: 400; }
+
 @media (max-width: 992px) {
   .pages {
     padding: 20px;
@@ -263,7 +275,6 @@ time {
   padding: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-transform: capitalize;
   text-align: center; }
 
 @media (max-width: 992px) {
@@ -315,7 +326,6 @@ time {
 /***** DESKTOP NAV ******/
 .desktop-nav-bar ul li a {
   color: cadetblue;
-  text-transform: uppercase;
   font-weight: bold;
   font-size: 100;
   padding: 0px;

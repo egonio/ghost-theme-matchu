@@ -275,6 +275,8 @@ time {
     padding-bottom: 40px;
 }
 
+
+
 .pages {
     background-color: $main-bg;
     padding-left: 100px;
@@ -304,6 +306,23 @@ time {
 .pages-content iframe {
     width: 100%;
 }
+
+.pages-header a:hover {
+    color: $link-color;
+}
+
+.pages-content a:hover {
+    color: $link-color;
+}
+
+.pages-content a {
+    color: $dark-text;
+    text-decoration: underline;
+    text-decoration-color: $link-color;
+    font-weight: 400;
+}
+
+
 
 @media (max-width: 992px) {
     .pages {

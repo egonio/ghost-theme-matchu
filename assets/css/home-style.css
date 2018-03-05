@@ -26,7 +26,7 @@ time {
     padding-left: 50px;
     padding-right: 50px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .index-main {
     background-color: #18191d;
     padding: 0px;
@@ -102,9 +102,13 @@ time {
 
 @media (max-width: 576px) {
   .post-card-content {
-    padding: 30px;
-    padding-left: 45px;
-    padding-right: 45px; } }
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .post-card-title {
+    font-size: 1.5em; }
+  .post-card-header {
+    padding: 20px; } }
 
 /*********** POST **********************/
 .posts {
@@ -160,7 +164,7 @@ time {
     padding-left: 50px;
     padding-right: 50px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .posts {
     padding: 0px;
     padding-left: 0px;
@@ -171,9 +175,19 @@ time {
 @media (max-width: 576px) {
   .post-content {
     background-color: white;
-    padding: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px; } }
+    padding: 20px; }
+  .post-full-title {
+    font-size: 1.5em; }
+  .post-content h1 {
+    font-size: 2em; }
+  .post-content h2 {
+    font-size: 1.75em; }
+  .post-content h3 {
+    font-size: 1.5em; }
+  .post-content h4, .post-content h5 {
+    font-size: 1.25em; }
+  .post-header {
+    padding: 20px; } }
 
 /************** PAGE ****************/
 .pages-content {
@@ -213,7 +227,7 @@ time {
     padding-left: 50px;
     padding-right: 50px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .pages {
     padding: 0px;
     padding-left: 0px;
@@ -224,9 +238,17 @@ time {
 @media (max-width: 576px) {
   .pages-content {
     background-color: white;
-    padding: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px; } }
+    padding: 20px; }
+  .pages-content h1 {
+    font-size: 2em; }
+  .pages-content h2 {
+    font-size: 1.75em; }
+  .pages-content h3 {
+    font-size: 1.5em; }
+  .pages-content h4, .pages-content h5 {
+    font-size: 1.25em; }
+  .pages-header {
+    padding: 20px; } }
 
 /*************** TAGS ******************/
 .tag-body {
@@ -250,13 +272,19 @@ time {
     padding-left: 50px;
     padding-right: 50px; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .tag-body {
     padding: 0px;
     padding-left: 0px;
     padding-right: 0px; }
   .tag-header {
     margin: 0px; } }
+
+@media (max-width: 576px) {
+  .tag-header {
+    padding: 20px; }
+  .tag-title {
+    font-size: 1.75em; } }
 
 /********* ERROR 404 *********/
 .error-body {
@@ -315,3 +343,24 @@ time {
   font-weight: lighter;
   font-size: 15px;
   text-align: center; }
+
+/*** PAGINATION *****/
+.pagination {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.page-number {
+  font-size: 1.25em;
+  padding: 5px;
+  color: white; }
+
+@media (max-width: 400px) {
+  .page-number {
+    font-size: 0.75em; }
+  .pagination a {
+    font-size: 0.75em; } }

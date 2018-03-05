@@ -8,16 +8,16 @@
                 <main class="index-post-cards">
                     <div class="index-card">
                         <div class="row">
-                            
                                 {{#foreach posts}}
                                  <div class="col-lg-12 col-xl-12">
                                  {{> "post-card"}}
                                  </div>
-                                  {{/foreach}}
-                            
+                                {{/foreach}}
                         </div>
                     </div>
+                    {{pagination}}
                 </main>
+                
             </div>
             <!-- Side bar -->
             <div class="col-sm-12 col-md-3 index-side-nav">
@@ -25,3 +25,5 @@
             </div>
         </div>
     </div>
+
+    

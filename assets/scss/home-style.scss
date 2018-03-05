@@ -1,7 +1,7 @@
 $main-bg: rgb(24, 25, 29);
 $post-bg: rgb(255, 255, 255);
 $header-light-bg: white;
-$header-dark-bg: rgb(40,46,51);
+$header-dark-bg: rgb(40, 46, 51);
 $link-color: cadetblue;
 $padding-lg: 100px;
 $padding-md: 50px;
@@ -9,6 +9,7 @@ $padding-sm: 0px;
 $light-text: white;
 $medium-text: rgb(135, 135, 135);
 $dark-text: black;
+
 html,
 body {
     background-color: $main-bg;
@@ -36,18 +37,16 @@ time {
     padding-bottom: 25px;
 }
 
-
-
 @media (max-width: 992px) {
     .index-main {
         background-color: $main-bg;
         padding: 20px;
         padding-left: $padding-md;
         padding-right: $padding-md;
-    }    
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .index-main {
         background-color: $main-bg;
         padding: 0px;
@@ -55,10 +54,9 @@ time {
         padding-right: $padding-sm;
     }
     .index-post-cards {
-        padding-bottom:0px;
+        padding-bottom: 0px;
     }
 }
-
 
 /*************** POST CARDS ****************/
 
@@ -117,13 +115,11 @@ time {
     margin: 0;
 }
 
-
-
-.post-card-img{
-    height:250px;    
-    overflow:hidden;
+.post-card-img {
+    height: 250px;
+    overflow: hidden;
     img {
-        overflow:hidden;
+        overflow: hidden;
         width: 100%;
     }
 }
@@ -134,13 +130,10 @@ time {
     border: 0;
     border-top: 4px solid $link-color;
     margin: 1em 0;
-    padding: 0; 
+    padding: 0;
 }
 
-
-@media (max-width: 1200px) {
-
-}
+@media (max-width: 1200px) {}
 
 @media (max-width: 767px) {
     .post-card {
@@ -149,13 +142,21 @@ time {
     }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
     .post-card-content {
-        padding: 30px;
-        padding-left: 45px;
-        padding-right: 45px;
-        
+        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+    .post-card-title {
+        font-size: 1.5em;
+    } 
+
+    .post-card-header {
+        padding: 20px;
+    }
+
+    
 }
 
 /*********** POST **********************/
@@ -222,27 +223,46 @@ time {
         padding: 20px;
         padding-left: $padding-md;
         padding-right: $padding-md;
-    }    
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .posts {
         padding: 0px;
         padding-left: $padding-sm;
         padding-right: $padding-sm;
     }
-
-    .post-header{
+    .post-header {
         margin: 0px;
     }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
     .post-content {
         background-color: $post-bg;
-        padding: 40px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding: 20px;
+    }
+    .post-full-title {
+        font-size: 1.5em;
+    }
+    .post-content{
+        h1{
+            font-size: 2em;
+        }
+        h2{
+            font-size: 1.75em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+
+        h4, h5 {
+            font-size: 1.25em;
+        }
+    }
+
+    .post-header {
+        padding: 20px;
     }
 }
 
@@ -290,27 +310,44 @@ time {
         padding: 20px;
         padding-left: $padding-md;
         padding-right: $padding-md;
-    }    
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .pages {
         padding: 0px;
         padding-left: $padding-sm;
         padding-right: $padding-sm;
     }
-
-    .pages-header{
+    .pages-header {
         margin: 0px;
     }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
     .pages-content {
         background-color: $post-bg;
-        padding: 40px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding: 20px;
+    }
+
+    .pages-content{
+        h1{
+            font-size: 2em;
+        }
+        h2{
+            font-size: 1.75em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+
+        h4, h5 {
+            font-size: 1.25em;
+        }
+    }
+
+    .pages-header {
+        padding: 20px;
     }
 }
 
@@ -338,10 +375,10 @@ time {
         padding: 20px;
         padding-left: $padding-md;
         padding-right: $padding-md;
-    }    
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .tag-body {
         padding: 0px;
         padding-left: $padding-sm;
@@ -349,6 +386,16 @@ time {
     }
     .tag-header {
         margin: 0px;
+    }
+}
+
+@media (max-width:576px){
+    .tag-header {
+        padding: 20px;
+    }
+
+    .tag-title {
+        font-size : 1.75em;
     }
 }
 
@@ -426,3 +473,32 @@ time {
     font-size: 15px;
     text-align: center;
 }
+
+/*** PAGINATION *****/
+
+.pagination {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.page-number{
+    font-size: 1.25em;
+    padding: 5px;
+    color: $light-text
+}
+
+@media (max-width:400px){
+    .page-number{
+        font-size: 0.75em;
+    }
+
+    .pagination a{
+        font-size: 0.75em;
+    }
+}
+

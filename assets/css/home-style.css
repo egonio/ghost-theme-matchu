@@ -5,6 +5,14 @@ body {
 time {
   color: #878787; }
 
+/************ For weird right space mobile issues *******/
+@media (max-width: 767px) {
+  .row, .col-xs-12, .col-lg-12, .col-sm-12 {
+    padding-right: 0px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px; } }
+
 /*************** INDEX ***************/
 .index-main {
   background-color: #18191d;
@@ -331,6 +339,9 @@ time {
   padding: 0px;
   text-decoration-style: none; }
 
+.desktop-nav-bar ul li a:hover {
+  cursor: pointer; }
+
 .nav-link:hover {
   color: #32d4da; }
 
@@ -378,23 +389,31 @@ time {
   .pagination a {
     font-size: 0.75em; } }
 
-/************ For weird right space mobile issues *******/
 @media (max-width: 767px) {
-  .row, .col-xs-12, .col-lg-12, .col-sm-12 {
-    padding-right: 0px;
-    width: 100%;
-    margin: 0px;
-    padding: 0px; } }
+  .pagination {
+    margin-top: 10px;
+    margin-bottom: 10px; } }
 
-/************ For wide Screen screens *******
-@media (min-width: 2000px) {
-    .all-content {
-        padding-left: 25%;
-        padding-right: 25%;
-    } 
-}
+/***** Mobile Page About *********/
+@media (max-width: 767px) {
+  .mobile-about {
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  .mobile-about-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 10px; }
+  .mobile-about-logo:hover {
+    cursor: pointer; }
+  .mobile-about-description {
+    font-weight: lighter;
+    font-size: 1.25em;
+    text-align: center;
+    color: white; } }
 
-*/
+/************ For wide Screen screens *******/
 body {
   max-width: 1600px;
   margin: 0 auto !important;

@@ -9,6 +9,25 @@ into the {body} of the default.hbs template --}}
 {{!-- Everything inside the #post tags pulls data from the post --}}
 
 
+<div class="mobile-about d-block d-md-none">
+    <div class="row justify-content-center">
+            {{#if @blog.logo}}
+                <div class="col-xs-12">
+                    <img class="mobile-about-logo img-responsive mx-auto d-block" src="{{@blog.logo}}" />
+                </div>
+                <div class="col-xs-12 index-text">
+                    <p class="mobile-about-description">{{@blog.description}}</p>
+                </div>
+                {{else}}
+                <div class="col-xs-12" style="width: 100%;">
+                    <p class="mobile-about-description">{{@blog.description}}</p>
+                </div>
+                {{/if}}
+    </div>
+</div>
+
+
+
 <div class="pages">
     <div class="row">
         <div class="col-xs-12 col-md-9">

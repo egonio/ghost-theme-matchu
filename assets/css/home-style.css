@@ -331,6 +331,9 @@ time {
   padding: 0px;
   text-decoration-style: none; }
 
+.nav-link:hover {
+  color: #32d4da; }
+
 .desktop-nav-bar ul {
   padding: 0px; }
 

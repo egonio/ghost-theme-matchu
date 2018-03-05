@@ -9,6 +9,7 @@ $padding-sm: 0px;
 $light-text: white;
 $medium-text: rgb(135, 135, 135);
 $dark-text: black;
+$link-color-hover: rgb(50, 212, 218);
 
 html,
 body {
@@ -461,6 +462,10 @@ time {
     font-size: 100;
     padding: 0px;
     text-decoration-style: none;
+}
+
+.nav-link:hover {
+    color: $link-color-hover;
 }
 
 .desktop-nav-bar ul {

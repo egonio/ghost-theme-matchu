@@ -520,6 +520,8 @@ time {
 }
 
 
+/************ For weird right space mobile issues *******/
+
 @media (max-width: 767px) {
     .row, .col-xs-12, .col-lg-12, .col-sm-12{
         padding-right: 0px;
@@ -528,5 +530,22 @@ time {
         padding: 0px;
     }
 }
+
+/************ For wide Screen screens *******/
+@media (min-width: 2000px) {
+
+    .pages-content, .pages-header, .post-header, .post-content, .post-card-header, .post-card-content{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .desktop-nav-logo {
+        width: 300px;
+        height: 300px;
+    }
+ 
+}
+
+
 
 

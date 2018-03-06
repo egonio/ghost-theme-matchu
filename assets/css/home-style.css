@@ -30,10 +30,10 @@ time {
 .index-post-cards {
   padding-bottom: 25px; }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .index-main {
-    padding-left: 10%;
-    padding-right: 10%; }
+    padding-left: 2.5%;
+    padding-right: 2.5%; }
   .index-post-cards {
     padding: 0px; } }
 
@@ -178,8 +178,8 @@ time {
 
 @media (max-width: 1400px) {
   .posts {
-    margin-left: 10%;
-    margin-right: 10%; } }
+    margin-left: 2.5%;
+    margin-right: 2.5%; } }
 
 @media (max-width: 992px) {
   .posts {
@@ -263,8 +263,8 @@ time {
 
 @media (max-width: 1400px) {
   .pages {
-    margin-left: 10%;
-    margin-right: 10%; } }
+    margin-left: 2.5%;
+    margin-right: 2.5%; } }
 
 @media (max-width: 992px) {
   .pages {
@@ -310,8 +310,8 @@ time {
 
 @media (max-width: 1400px) {
   .tags {
-    margin-left: 10%;
-    margin-right: 10%; } }
+    margin-left: 2.5%;
+    margin-right: 2.5%; } }
 
 @media (max-width: 992px) {
   .tags {
@@ -440,6 +440,9 @@ time {
   color: white; }
 
 /******* COMMENTS ********/
+.comments-link {
+  display: none; }
+
 /************ For wide Screen screens *******/
 body {
   max-width: 1600px;

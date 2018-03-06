@@ -23,7 +23,7 @@ $mobile-sm-body-padding: 15px;
 
 $mobile-body-margin: 0px;
 $desktop-body-margin: 10%;
-$desktop-small-body-margin: 10%;
+$desktop-small-body-margin: 2.5%;
 
 
 $mobile-cards-header-size: 1.75em;
@@ -71,7 +71,7 @@ time {
     padding-bottom: 25px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .index-main {
         padding-left:$desktop-small-body-margin;
         padding-right: $desktop-small-body-margin;
@@ -631,6 +631,10 @@ time {
 }
 
 /******* COMMENTS ********/
+
+.comments-link{
+    display:none;
+}
 
 /************ For wide Screen screens *******/
 

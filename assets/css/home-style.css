@@ -6,8 +6,11 @@ time {
   color: #878787; }
 
 /************ For weird right space mobile issues *******/
-@media (max-width: 767px) {
-  .row, .col-xs-12, .col-lg-12, .col-sm-12 {
+@media (max-width: 991px) {
+  .row,
+  .col-xs-12,
+  .col-lg-12,
+  .col-sm-12 {
     padding-right: 0px;
     width: 100%;
     margin: 0px;
@@ -17,8 +20,8 @@ time {
 .index-main {
   background-color: #18191d;
   padding: 30px;
-  padding-left: 100px;
-  padding-right: 100px; }
+  padding-left: 10%;
+  padding-right: 10%; }
 
 .index-header {
   text-align: left;
@@ -27,21 +30,21 @@ time {
 .index-post-cards {
   padding-bottom: 25px; }
 
-@media (max-width: 992px) {
+@media (max-width: 1300px) {
   .index-main {
-    background-color: #18191d;
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px; } }
+    padding-left: 10%;
+    padding-right: 10%; }
+  .index-post-cards {
+    padding: 0px; } }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .index-main {
     background-color: #18191d;
-    padding: 0px;
+    padding: 10px;
     padding-left: 0px;
     padding-right: 0px; }
   .index-post-cards {
-    padding-bottom: 0px; } }
+    padding: 0px; } }
 
 /*************** POST CARDS ****************/
 .post-card {
@@ -51,12 +54,11 @@ time {
 
 .post-card-content {
   color: black;
-  padding: 60px;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding: 4.5%; }
 
 .post-card-date {
-  color: #878787; }
+  color: #878787;
+  margin-bottom: 5px; }
 
 .post-card-tags {
   text-decoration: underline;
@@ -80,10 +82,10 @@ time {
 
 .post-card-header {
   background-color: #282e33;
-  padding: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  color: white; }
+  color: white;
+  padding: 4.5%;
+  padding-top: 2%;
+  padding-bottom: 2%; }
 
 .post-card-header p {
   margin: 0; }
@@ -95,35 +97,46 @@ time {
     overflow: hidden;
     width: 100%; }
 
-.separator hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 4px solid cadetblue;
-  margin: 1em 0;
-  padding: 0; }
-
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .post-card {
-    margin-top: 20px;
-    margin-bottom: 0px; } }
-
-@media (max-width: 576px) {
-  .post-card-content {
-    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .post-card-header {
+    padding: 15px;
     padding-left: 20px;
     padding-right: 20px; }
+  .post-card-content {
+    padding: 20px; }
+    .post-card-content .container-fluid {
+      padding: 0; }
   .post-card-title {
-    font-size: 1.5em; }
+    font-size: 1.75em; } }
+
+@media (max-width: 767px) {
+  .post-card-content {
+    padding: 15px; }
   .post-card-header {
     padding: 20px; } }
 
 /*********** POST **********************/
 .posts {
   background-color: #18191d;
-  padding: 30px;
-  padding-left: 100px;
-  padding-right: 100px; }
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.post-content blockquote {
+  margin: 0 0 1.5em;
+  padding: 0 1.5em;
+  border-left: 3px solid cadetblue; }
+
+.post-content blockquote p {
+  margin: 0 0 1em;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-style: italic; }
 
 .post-header a {
   color: white;
@@ -150,42 +163,42 @@ time {
   background-color: white; }
 
 .post-content {
-  padding: 80px;
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding: 4.5%; }
 
 .post-header {
   background-color: #282e33;
   color: white;
-  padding: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-transform: capitalize;
-  margin-top: 20px; }
+  padding: 4.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 25px; }
 
 .post-body .post-content img {
   width: 100%; }
 
+@media (max-width: 1400px) {
+  .posts {
+    margin-left: 10%;
+    margin-right: 10%; } }
+
 @media (max-width: 992px) {
   .posts {
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px; } }
+    margin: 0px; }
+  .post-header {
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px; }
+  .post-content {
+    padding: 20px; } }
 
 @media (max-width: 767px) {
-  .posts {
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px; }
-  .post-header {
-    margin: 0px; } }
-
-@media (max-width: 576px) {
   .post-content {
-    background-color: white;
+    padding: 15px; }
+  .post-header {
     padding: 20px; }
   .post-full-title {
-    font-size: 1.5em; }
+    font-size: 1.75em; }
   .post-content h1 {
     font-size: 2em; }
   .post-content h2 {
@@ -193,32 +206,39 @@ time {
   .post-content h3 {
     font-size: 1.5em; }
   .post-content h4, .post-content h5 {
-    font-size: 1.25em; }
-  .post-header {
-    padding: 20px; } }
+    font-size: 1.25em; } }
 
 /************** PAGE ****************/
 .pages-content {
   background-color: white;
-  padding: 80px;
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding: 4.5%; }
+
+.pages-content blockquote {
+  margin: 0 0 1.5em;
+  padding: 0 1.5em;
+  border-left: 3px solid cadetblue; }
+
+.pages-content blockquote p {
+  margin: 0 0 1em;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-style: italic; }
 
 .pages {
   background-color: #18191d;
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
   padding-top: 30px;
   padding-bottom: 50px; }
 
 .pages-header {
   background-color: #282e33;
   color: white;
-  padding: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-transform: capitalize;
-  margin-top: 20px; }
+  padding: 4.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 25px; }
 
 .pages-header img {
   width: 100%; }
@@ -241,24 +261,30 @@ time {
   text-decoration-color: cadetblue;
   font-weight: 400; }
 
+@media (max-width: 1400px) {
+  .pages {
+    margin-left: 10%;
+    margin-right: 10%; } }
+
 @media (max-width: 992px) {
   .pages {
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px; } }
+    margin: 0px;
+    padding: 0; }
+  .pages-header {
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px; }
+  .pages-content {
+    padding: 20px; } }
 
 @media (max-width: 767px) {
-  .pages {
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px; }
-  .pages-header {
-    margin: 0px; } }
-
-@media (max-width: 576px) {
   .pages-content {
-    background-color: white;
+    padding: 15px; }
+  .pages-header {
     padding: 20px; }
+  .post-full-title {
+    font-size: 1.75em; }
   .pages-content h1 {
     font-size: 2em; }
   .pages-content h2 {
@@ -266,42 +292,40 @@ time {
   .pages-content h3 {
     font-size: 1.5em; }
   .pages-content h4, .pages-content h5 {
-    font-size: 1.25em; }
-  .pages-header {
-    padding: 20px; } }
+    font-size: 1.25em; } }
 
 /*************** TAGS ******************/
-.tag-body {
+.tags {
   background-color: #18191d;
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
   padding-top: 30px;
   padding-bottom: 50px; }
 
 .tag-header {
   color: white;
-  padding: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center; }
 
+@media (max-width: 1400px) {
+  .tags {
+    margin-left: 10%;
+    margin-right: 10%; } }
+
 @media (max-width: 992px) {
-  .tag-body {
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px; } }
+  .tags {
+    margin: 0px;
+    padding: 0; }
+  .tag-header {
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px; }
+  .tag-content {
+    padding-bottom: 2px; } }
 
 @media (max-width: 767px) {
-  .tag-body {
-    padding: 0px;
-    padding-left: 0px;
-    padding-right: 0px; }
-  .tag-header {
-    margin: 0px; } }
-
-@media (max-width: 576px) {
-  .tag-header {
-    padding: 20px; }
   .tag-title {
     font-size: 1.75em; } }
 
@@ -395,23 +419,25 @@ time {
     margin-bottom: 10px; } }
 
 /***** Mobile Page About *********/
-@media (max-width: 767px) {
-  .mobile-about {
-    margin-top: 20px;
-    margin-bottom: 10px; }
-  .mobile-about-logo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid white;
-    margin-bottom: 10px; }
-  .mobile-about-logo:hover {
-    cursor: pointer; }
-  .mobile-about-description {
-    font-weight: lighter;
-    font-size: 1.25em;
-    text-align: center;
-    color: white; } }
+.mobile-about {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.mobile-about-logo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 10px; }
+
+.mobile-about-logo:hover {
+  cursor: pointer; }
+
+.mobile-about-description {
+  font-weight: lighter;
+  font-size: 1.25em;
+  text-align: center;
+  color: white; }
 
 /******* COMMENTS ********/
 /************ For wide Screen screens *******/

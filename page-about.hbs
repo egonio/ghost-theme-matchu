@@ -9,10 +9,10 @@ into the {body} of the default.hbs template --}}
 {{!-- Everything inside the #post tags pulls data from the post --}}
 
 
-<div class="mobile-about d-block d-md-none">
+<div class="mobile-about d-block d-lg-none">
     <div class="row justify-content-center">
             {{#if @blog.logo}}
-                <div class="col-xs-12">
+                <div class="col-xs-12 w-100">
                     <img class="mobile-about-logo img-responsive mx-auto d-block" src="{{@blog.logo}}" />
                 </div>
                 <div class="col-xs-12 index-text">
@@ -30,7 +30,7 @@ into the {body} of the default.hbs template --}}
 
 <div class="pages">
     <div class="row">
-        <div class="col-xs-12 col-md-9">
+        <div class="col-xs-12 col-lg-9">
             {{#post}}
             <main>
                 <div class="pages-header">
@@ -52,7 +52,7 @@ into the {body} of the default.hbs template --}}
             </main>
             {{/post}}
         </div>
-        <div class="col-xs-12 col-md-3">
+        <div class="col-xs-12 col-lg-3">
             {{>"desktop-nav"}}
         </div>
     </div>

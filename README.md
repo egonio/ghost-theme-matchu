@@ -26,8 +26,10 @@ Check out the live version: [here](https://mattwelke.com/blog/)
 <a name="disqus"></a>
 ## To add Disqus 
 *Note: Thanks for [Matt Welke](https://github.com/welkie) for creating this disqus example*
+
 You can add this in the footer settings in your ghost admin.
 Make sure to change the s.src link to your disqus url.
+
 *Note: I added some padding for styling purposes.*
 ```javascript
 <script>
@@ -73,7 +75,7 @@ var commentDiv = document.getElementById('comments');
 ## Changing the theme colors
 
 If you're not a fan of the colors, you're in luck! Matchu uses Sass, so changing the color of the blog theme is easy.
-Just go to assest/scss/homestyle.scss and change these variables.
+Just go to **assest/scss/homestyle.scss** and change these variables.
 
 ![variables](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/Screen%20Shot%202018-03-12%20at%204.02.57%20PM.png)
 
@@ -90,7 +92,7 @@ Just go to assest/scss/homestyle.scss and change these variables.
  <a name="about"></a>
  ## About support 
  
- Matchu supports an "about" page. Just create a page '/about' and it will take the contents of that page into the speical template. The desktop view looks the same as regular page template. But the mobile view will show the main photo and the website description.
+Matchu supports an "about" page. Just create a page '/about' and it will take the contents of that page into the speical template. The desktop view looks the same as regular page template. But the mobile view will show the main photo and the website description.
  
  Desktop:
  ![about Desktop](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/about_desktop.png)
@@ -103,7 +105,8 @@ Just go to assest/scss/homestyle.scss and change these variables.
  
  ![screenshots](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/404.png)
  
- If you're not a fan of Fogsland 404 icon. You can change it at assest/404.png
+ If you're not a fan of Fogsland 404 icon. You can change it at **assest/404.png**
+ 
  *Note: make sure to name it 404 and the file extension is .png*
  
  <a name="screenshots"></a>

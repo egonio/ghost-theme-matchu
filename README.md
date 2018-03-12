@@ -1,6 +1,15 @@
 # Matchu 
 
 ### Free Personal Blog Theme for [Ghost](https://ghost.org/)
+
+# Table of Contents
+1. [Adding Disqus](#disqus)
+2. [Example2](#example2)
+3. [Third Example](#third-example)
+
+## Example
+## Example2
+## Third Example
  
  Matchu is a free personal blog dark theme for Ghost.org blogging platform. It is simple and minimal. Great for personal and programming blogs.
  
@@ -12,7 +21,7 @@
 
 Check out the live version: [here](https://mattwelke.com/blog/)
 
-## To add Disqus 
+## To Add Disqus <a name="disqus"></a>
 *Note: Thanks for [Matt Welke](https://github.com/welkie) for creating this disqus example*
 You can add this in the footer settings in your ghost admin.
 Make sure to change the s.src link to your disqus url.

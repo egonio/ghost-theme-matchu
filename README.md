@@ -59,10 +59,22 @@ commentDiv.style.paddingRight = paddingAmt;
 </script>
 ```
 
-## Changing the theme colours
-If you're not a fan of the colours, you're in luck! Matchu uses Sass, so changing the colour of the blog theme is easy.
+## Changing the theme colors
+
+If you're not a fan of the colors, you're in luck! Matchu uses Sass, so changing the color of the blog theme is easy.
 Just go to assest/scss/homestyle.scss and change these variables.
+
 ![variables](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/Screen%20Shot%202018-03-12%20at%203.29.18%20PM.png)
+
+* "$main-bg" - main background color
+* "$post-bg" - post body background color
+* "header-text - header text color
+* "header-dark-bg" - header background color
+* "link-color" - color for links & <a> tags
+* "light-text" - color for header text
+* "medium-text" - color for tags & date 
+* "dark-text"  - color for body text 
+* "link-color-hover" - color for links & <a> on hover
 
 
 &nbsp;

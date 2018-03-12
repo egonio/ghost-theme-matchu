@@ -1,6 +1,6 @@
 $main-bg: rgb(24, 25, 29);
 $post-bg: rgb(255, 255, 255);
-$header-light-bg: white;
+$header-text: white;
 $header-dark-bg: rgb(40, 46, 51);
 $link-color: cadetblue;
 $light-text: white;
@@ -64,7 +64,7 @@ time {
 
 .index-header {
     text-align: left;
-    color: $header-light-bg;
+    color: $header-text;
 }
 
 .index-post-cards {
@@ -142,7 +142,7 @@ time {
 
 .post-card-header {
     background-color: $header-dark-bg;
-    color: $header-light-bg;
+    color: $header-text;
     padding: $desktop-body-padding;
     padding-top: $desktop-header-padding;
     padding-bottom: $desktop-header-padding;
@@ -254,7 +254,7 @@ time {
 
 .post-header {
     background-color: $header-dark-bg;
-    color: $header-light-bg;
+    color: $header-text;
     padding: $desktop-body-padding;
     padding-top: $desktop-header-padding;
     padding-bottom: $desktop-header-padding;
@@ -348,7 +348,7 @@ time {
 
 .pages-header {
     background-color: $header-dark-bg;
-    color: $header-light-bg;
+    color: $header-text;
     padding: $desktop-body-padding;
     padding-top: $desktop-header-padding;
     padding-bottom: $desktop-header-padding;
@@ -445,7 +445,7 @@ time {
 }
 
 .tag-header {
-    color: $header-light-bg;
+    color: $header-text;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;

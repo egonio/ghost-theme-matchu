@@ -94,10 +94,10 @@ Just go to **assest/scss/homestyle.scss** and change these variables.
  
 Matchu supports an "about" page. Just create a page '/about' and it will take the contents of that page into the speical template. The desktop view looks the same as regular page template. But the mobile view will show the main photo and the website description.
  
- Desktop:
+ 
  ![about Desktop](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/about_desktop.png)
  
- Mobile
+ 
  ![about mobile](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/mobile.png)
  
  <a name="404icon"></a>
@@ -120,8 +120,7 @@ Matchu supports an "about" page. Just create a page '/about' and it will take th
  
  
  
- Released under the MIT license
+ Released under the [MIT license](LICENSE)
 
 
-&nbsp;
 

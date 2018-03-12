@@ -12,8 +12,8 @@
 
 Check out the live version: [here](https://mattwelke.com/blog/)
 
-## To add Disqus: 
-
+## To add Disqus 
+*Note: Thanks for [Matt Welke](https://github.com/welkie) for creating this disqus example*
 You can add this in the footer settings in your ghost admin.
 Make sure to change the s.src link to your disqus url.
 *Note: I added some padding for styling purposes.*
@@ -47,7 +47,7 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 ```
 
-## For Self Hoested Comments: 
+## For Self Hoested Comments
 
 In each post, there's an empty div in the bottom with id 'comments' where users can add their comments platform. You can target this with: 
 ```javascript
@@ -58,6 +58,11 @@ commentDiv.style.paddingLeft = paddingAmt;
 commentDiv.style.paddingRight = paddingAmt;
 </script>
 ```
+
+## Changing the theme colours
+If you're not a fan of the colours, you're in luck! Matchu uses Sass, so changing the colour of the blog theme is easy.
+Just go to assest/scss/homestyle.scss and change these variables.
+![variables](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/Screen%20Shot%202018-03-12%20at%203.29.18%20PM.png)
 
 
 &nbsp;

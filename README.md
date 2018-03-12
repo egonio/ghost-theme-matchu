@@ -21,7 +21,7 @@
 
 *Note: Matchu doesn't support headline photos for each post.*
 
-Check out the live version: [here](https://mattwelke.com/blog/)
+**Check out the live version: [here](https://mattwelke.com/blog/)**
 
 <a name="disqus"></a>
 ## To add Disqus 

@@ -1,4 +1,5 @@
-# Matchu ### Free Personal Blog Theme for [Ghost](https://ghost.org/)
+# Matchu 
+#### Free Personal Blog Theme for [Ghost](https://ghost.org/)
 
 ## Table of Contents
 1. [Introduction](#introduction)

@@ -1,6 +1,8 @@
 # Matchu 
 #### Free Personal Blog Theme for [Ghost](https://ghost.org/)
 
+![screenhots](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/index.png)
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Adding Disqus](#disqus)
@@ -111,9 +113,7 @@ Matchu supports an "about" page. Just create a page '/about' and it will take th
  
  <a name="screenshots"></a>
  # Screenshots 
- Desktop Index
- ![screenhots](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/index.png)
- 
+  
  Mobile Index
  ![screenhots](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/index-mobile.png)
 

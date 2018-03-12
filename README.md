@@ -47,7 +47,7 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 ```
 
-## For Self Hoested Comments
+## For Self Hosted Comments
 
 In each post, there's an empty div in the bottom with id 'comments' where users can add their comments platform. You can target this with: 
 ```javascript

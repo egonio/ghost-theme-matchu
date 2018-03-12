@@ -1,10 +1,7 @@
-# Matchu
+# Matchu 
 
-Free Blog Dark theme for ghost
+###Free Personal Blog Theme for [Ghost](https://ghost.org/)
 
-To be added later ~
-
-Note: Still working on having picture  support.
 
 Check out the live version: mattwelke.com
 

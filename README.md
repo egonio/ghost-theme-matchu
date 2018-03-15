@@ -1,6 +1,19 @@
 # Matchu 
+#### Free Personal Blog Theme for [Ghost](https://ghost.org/)
 
-### Free Personal Blog Theme for [Ghost](https://ghost.org/)
+![screenhots](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/index.png)
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Adding Disqus](#disqus)
+3. [Self Hosted Comment](#selfcomments)
+4. [Changing Theme Colors](#themecolors)
+5. [About Support](#about)
+6. [Changing 404 Icon](#404icon)
+7. [Screenshots](#screenshots)
+
+ <a name="introduction"></a>
+ ## Introduction 
  
  Matchu is a free personal blog dark theme for Ghost.org blogging platform. It is simple and minimal. Great for personal and programming blogs.
  
@@ -10,12 +23,15 @@
 
 *Note: Matchu doesn't support headline photos for each post.*
 
-Check out the live version: [here](https://mattwelke.com/blog/)
+**Check out the live version: [here](https://mattwelke.com/blog/)**
 
+<a name="disqus"></a>
 ## To add Disqus 
 *Note: Thanks for [Matt Welke](https://github.com/welkie) for creating this disqus example*
+
 You can add this in the footer settings in your ghost admin.
 Make sure to change the s.src link to your disqus url.
+
 *Note: I added some padding for styling purposes.*
 ```javascript
 <script>
@@ -47,24 +63,23 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 ```
 
-## For Self Hoested Comments
+<a name="selfcomments"></a>
+## For self hosted comments
 
 In each post, there's an empty div in the bottom with id 'comments' where users can add their comments platform. You can target this with: 
 ```javascript
 <script>
 var commentDiv = document.getElementById('comments');
-var paddingAmt = '10px';
-commentDiv.style.paddingLeft = paddingAmt;
-commentDiv.style.paddingRight = paddingAmt;
 </script>
 ```
 
+<a name="themecolors"></a>
 ## Changing the theme colors
 
 If you're not a fan of the colors, you're in luck! Matchu uses Sass, so changing the color of the blog theme is easy.
-Just go to assest/scss/homestyle.scss and change these variables.
+Just go to **assest/scss/homestyle.scss** and change these variables.
 
-![variables](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/Screen%20Shot%202018-03-12%20at%203.29.18%20PM.png)
+![variables](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/Screen%20Shot%202018-03-12%20at%204.02.57%20PM.png)
 
 * "$main-bg" - main background color
 * "$post-bg" - post body background color
@@ -75,7 +90,37 @@ Just go to assest/scss/homestyle.scss and change these variables.
 * "medium-text" - color for tags & date 
 * "dark-text"  - color for body text 
 * "link-color-hover" - color for links & <a> on hover
+ 
+ <a name="about"></a>
+ ## About support 
+ 
+Matchu supports an "about" page. Just create a page '/about' and it will take the contents of that page into the speical template. The desktop view looks the same as regular page template. But the mobile view will show the main photo and the website description.
+ 
+ 
+ ![about Desktop](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/about_desktop.png)
+ 
+ 
+ ![about mobile](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/mobile.png)
+ 
+ <a name="404icon"></a>
+  ## Changing 404 icon 
+ 
+ ![screenshots](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/404.png)
+ 
+ If you're not a fan of Fogsland 404 icon. You can change it at **assest/404.png**
+ 
+ *Note: make sure to name it 404 and the file extension is .png*
+ 
+ <a name="screenshots"></a>
+ # Screenshots 
+  
+ Mobile Index
+ ![screenhots](https://github.com/egonio/ghost-theme-matchu/blob/master/screenshots/index-mobile.png)
+
+ 
+ 
+ 
+ Released under the [MIT license](LICENSE)
 
 
-&nbsp;
 

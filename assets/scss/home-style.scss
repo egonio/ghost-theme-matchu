@@ -262,7 +262,8 @@ time {
 }
 
 .post-body .post-content img {
-    width: 100%;
+    max-width: 100%;
+    margin-bottom: 45px;
 }
 
 
@@ -356,11 +357,13 @@ time {
 }
 
 .pages-header img {
-    width: 100%;
+    max-width: 100%;
+    margin-bottom: 45px
 }
 
 .pages-content img {
-    width: 100%;
+    max-width: 100%;
+    margin-bottom: 45px;
 }
 
 .pages-content iframe {

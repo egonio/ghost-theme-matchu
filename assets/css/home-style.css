@@ -174,7 +174,8 @@ time {
   margin-top: 25px; }
 
 .post-body .post-content img {
-  width: 100%; }
+  max-width: 100%;
+  margin-bottom: 45px; }
 
 @media (max-width: 1400px) {
   .posts {
@@ -241,10 +242,12 @@ time {
   margin-top: 25px; }
 
 .pages-header img {
-  width: 100%; }
+  max-width: 100%;
+  margin-bottom: 45px; }
 
 .pages-content img {
-  width: 100%; }
+  max-width: 100%;
+  margin-bottom: 45px; }
 
 .pages-content iframe {
   width: 100%; }
